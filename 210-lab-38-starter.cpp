@@ -11,7 +11,6 @@ using namespace std;
 //C:\\Users\\hope4\\Desktop\\COMSC 210 Work\\210-Lab-36\\codes.txt
 int main() {
     IntBinaryTree tree;
-    
     cout<<"Please enter file path"<<endl;
     string filepath="C:\\Users\\hope4\\Desktop\\COMSC 210 Work\\210-Lab-36\\codes.txt";
     //cin>>filepath;
@@ -24,11 +23,22 @@ int main() {
     while(getline(file,line)){
         tree.insertNode(line);
     }
-    // confirms a random code i chose is actually inside of the BST
-    cout<< tree.searchNode("aYOI03yd");
-    // prints out said BST
-    tree.displayPostOrder();
-    
+    int choice;
+    do{
+        cout<<"Record functions:"<<endl;
+        cout<<"[1]Insert Code"<<endl;
+        cout<<"[2]Is code in records"<<endl;
+        cout<<"[3]Remove code from record"<<endl;
+        cout<<"[4]Print out BST Preorder "<<endl;
+        cout<<"[5]Exit Record functions"<<endl;
+        cin>>choice;
+        switch(choice){
+            case 1:
+                break;
+            case 2:
+
+        }
+    }while(choice!=5);
 
     return 0;
 }
