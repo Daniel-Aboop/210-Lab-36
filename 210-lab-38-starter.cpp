@@ -3,8 +3,10 @@
 using namespace std;
 
 int main() {
-    IntBinaryTree balls;
-  
+    IntBinaryTree tree;
+    tree.insertNode("yeah");
+    tree.insertNode("nop");
+    tree.displayInOrder();
 
     return 0;
 }
