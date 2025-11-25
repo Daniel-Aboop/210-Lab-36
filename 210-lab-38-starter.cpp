@@ -8,12 +8,12 @@
 
 using namespace std;
 
-//C:\\Users\\hope4\\Desktop\\COMSC 210 Work\\210-Lab-36\\codes.txt
+
 int main() {
     IntBinaryTree tree;
     cout<<"Please enter file path"<<endl;
-    string filepath="C:\\Users\\hope4\\Desktop\\COMSC 210 Work\\210-Lab-36\\codes.txt";
-    //cin>>filepath;
+    string filepath;
+    cin>>filepath;
     ifstream file(filepath);
     if(!file){
         cout<<"could not open file";
