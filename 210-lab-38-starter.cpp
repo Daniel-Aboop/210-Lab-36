@@ -13,11 +13,14 @@ int main() {
     IntBinaryTree tree;
     cout<<"Please enter file path"<<endl;
     string filepath;
-    cin>>filepath;
+    getline(cin,filepath);
     ifstream file(filepath);
     if(!file){
-        cout<<"could not open file";
+        cout<<"could not open file"<<endl;
         return 1;
+    }
+    else{
+        cout<<"Opened file!"<<endl;
     }
     string line;
     while(getline(file,line)){
